@@ -1,157 +1,94 @@
-<div align="center">
-
-# Fyuraa Agent Skills
-
-**Modular, production-grade AI Agent Skills built on the [Agent Skills Open Standard](https://agentskills.io).**
-
-Engineered for Staff-level software architecture, full-stack web performance & security, anti-slop UI/UX systems, and tactile motion physics.
+﻿# Runbook Skills
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg?style=flat-square)](LICENSE)
-[![Standard: Agent Skills](https://img.shields.io/badge/Standard-Agent%20Skills-111827?style=flat-square)](https://agentskills.io)
-[![Skills Count](https://img.shields.io/badge/Skills-4%20Modules-059669?style=flat-square)](#skill-catalog)
-[![PRs Welcome](https://img.shields.io/badge/PRs-Welcome-6366f1?style=flat-square)](CONTRIBUTING.md)
+[![Skills: 6](https://img.shields.io/badge/Skills-6-2563eb?style=flat-square)](#skill-catalog)
+[![CI](https://img.shields.io/github/actions/workflow/status/naufallariff/runbook-skills/validate-skills.yml?branch=main&label=CI&style=flat-square)](https://github.com/naufallariff/runbook-skills/actions/workflows/validate-skills.yml)
+[![Standard: Agent Skills](https://img.shields.io/badge/Standard-Agent%20Skills-0f766e?style=flat-square)](https://agentskills.io/specification)
 
-[Skill Catalog](#skill-catalog) • [How It Works](#architecture--progressive-disclosure) • [Quick Start](#quick-start) • [Contributing](#contributing)
+**Repeatable workflows for architecture decisions, tested web features, and deliberate interface design.**
 
-</div>
+Six open-source skills turn a task into constraints, execution steps, failure checks, and verification evidence. Read the workflow, install only what you need, and keep its supporting references close. Original skill text and code are MIT licensed.
 
----
+[Browse the catalog](#skill-catalog) · [Quick start](#quick-start) · [Contribute](CONTRIBUTING.md) · [Changelog](CHANGELOG.md)
 
-## Why Fyuraa Agent Skills?
-
-Most system prompts bloat the context window with thousands of lines of irrelevant rules on every turn. **Fyuraa Agent Skills** solves this through **Progressive Disclosure**:
-
-1. **Lightweight Routing (`SKILL.md`)** — Each skill exposes crisp frontmatter triggers (`name` + `description`) and core decision frameworks so agents activate the right expertise only when needed.
-2. **On-Demand Deep References (`references/`)** — Heavy architectural blueprints, OKLCH token scales, Tailwind CSS v4+ mappings, and security checklists live in modular sub-files loaded strictly when the task requires them.
-3. **Cross-Platform Portability** — Works seamlessly across **Gemini**, **Google Antigravity**, **VS Code** (`.github/skills/` & `.agents/skills/`), **Cursor**, and CLI agents.
-
----
-
-## Skill Catalog
-
-| Skill | Domain | Core Capabilities | Footprint |
-| :--- | :--- | :--- | :--- |
-| [**`software-architecture-lead`**](skills/software-architecture-lead) | Engineering & SDLC | JS/TS/Node.js standards, repository architecture, ADRs, forward-thinking checklists, and long-term planning. | `SKILL.md` |
-| [**`fullstack-web-playbook`**](skills/fullstack-web-playbook) | Full-Stack Web | Rendering strategies, modern CSS, database modeling, Core Web Vitals, Passkeys/CSP security, and CI/CD. | `SKILL.md` + `4` refs |
-| [**`design-architect`**](skills/design-architect) | UI/UX & Systems | Anti-slop UI architecture, Golden Ratio typography, OKLCH color systems, Tailwind CSS v4+, and UX laws. | `SKILL.md` + `6` refs |
-| [**`ui-motion-craft`**](skills/ui-motion-craft) | Motion & Polish | Spring physics, custom easing curves, interruptible transitions, gesture damping, and GPU performance. | `SKILL.md` |
-
-### Explore Each Skill
-
-<details>
-<summary><strong>1. <code>software-architecture-lead</code></strong> — Staff/Principal Engineering & Repo Architecture</summary>
-<br>
-
-- **Best for:** Designing new repositories, writing production TypeScript/Node.js, enforcing strict typing (`verbatimModuleSyntax`, `noUncheckedIndexedAccess`), drafting Architecture Decision Records (ADRs), and structuring CI/CD gates.
-- **Key Guardrails:** Zero `any`, runtime boundary validation, `node:` built-in prefixes, reversible design decisions, and international-standard repo layouts.
-- **Source:** [`skills/software-architecture-lead/SKILL.md`](skills/software-architecture-lead/SKILL.md)
-
-</details>
-
-<details>
-<summary><strong>2. <code>fullstack-web-playbook</code></strong> — End-to-End Web Platform Engineering</summary>
-<br>
-
-- **Best for:** Full-stack web applications from initial architecture to production deployment, database indexing, Core Web Vitals optimization, and security hardening.
-- **Progressive Reference Modules:**
-  - `01-architecture-and-design.md` — Rendering selection (SSG/ISR/Streaming SSR/SPA), `:has()`, `@container`, `@starting-style`, and WCAG 2.2 AA+.
-  - `02-frontend-ui-and-behaviors.md` — Native `<dialog>` / `popover`, View Transitions API, autofill-ready forms, Built-in AI, and WebMCP.
-  - `03-backend-database-and-performance.md` — RFC 9457 error contracts, `UUIDv7`, cursor pagination, LCP/INP scheduling (`scheduler.yield()`), and WASM workers.
-  - `04-security-privacy-testing-deploy.md` — Passkeys (WebAuthn), Trusted Types CSP, Sanitizer API, PWA caching, and Canary rollouts.
-- **Source:** [`skills/fullstack-web-playbook/SKILL.md`](skills/fullstack-web-playbook/SKILL.md)
-
-</details>
-
-<details>
-<summary><strong>3. <code>design-architect</code></strong> — Unified Product Design & Tailwind CSS v4+ System</summary>
-<br>
-
-- **Best for:** Designing interfaces, design token architectures, brand/logography systems, honest analytics dashboards, and auditing UI against generic AI templates.
-- **Progressive Reference Modules:**
-  - `01-design-ratios-typography-and-copy.md` — Golden Ratio (`1.618`), modular scales, `tabular-nums`, and authentic product copywriting.
-  - `02-color-science-and-token-systems.md` — Perceptual OKLCH palettes, `60-30-10` balance, WCAG contrast floors, and 3-tier CSS tokens.
-  - `03-graphic-3d-and-logography.md` — Swap Test discipline, glass/glow dose caps, crisp SVG geometry, and Three.js/R3F lighting.
-  - `04-ux-laws-and-functional-flows.md` — Fitts, Hick, Miller, Doherty Threshold, mobile thumb zones, and complete 6-state UI resilience.
-  - `05-tailwind-v4-and-component-craft.md` — Canonical Tailwind CSS v4+ syntax table (`bg-linear-to-r`, `shadow-xs`, `outline-hidden`, `@theme`) and accessible primitives.
-  - `06-dashboard-data-viz-and-motion.md` — Quiet & Wordless dashboard rules, visual encoding hierarchy, and pitch deck storytelling.
-- **Source:** [`skills/design-architect/SKILL.md`](skills/design-architect/SKILL.md)
-
-</details>
-
-<details>
-<summary><strong>4. <code>ui-motion-craft</code></strong> — Tactile UI Polish & Interaction Physics</summary>
-<br>
-
-- **Best for:** Tuning component micro-interactions, popover origin scaling, spring physics, gesture velocity thresholds, and `clip-path` reveals.
-- **Key Guardrails:** Never animate `scale(0)` or high-frequency keyboard shortcuts (`Cmd+K`), restrict animations to compositor properties (`transform`, `opacity`, `clip-path`), and enforce `prefers-reduced-motion`.
-- **Source:** [`skills/ui-motion-craft/SKILL.md`](skills/ui-motion-craft/SKILL.md)
-
-</details>
-
----
-
-## Architecture & Progressive Disclosure
+## Architecture
 
 ```text
-fyuraa-agent-skills/
-├── README.md
-├── LICENSE
-├── AGENTS.md                         # Global conventions for AI contributors
-├── CONTRIBUTING.md                   # PR guidelines & commit standards
-├── CHANGELOG.md
-├── scripts/
-│   └── package-skills.sh             # Cross-platform .zip packager (Linux/macOS/Windows)
-└── skills/
-    ├── software-architecture-lead/
-    │   └── SKILL.md
-    ├── fullstack-web-playbook/
-    │   ├── SKILL.md
-    │   └── references/ (4 modules)
-    ├── design-architect/
-    │   ├── SKILL.md
-    │   └── references/ (6 modules)
-    └── ui-motion-craft/
-        └── SKILL.md
+runbook-skills/
+|-- skills/<domain>/<slug>/
+|   |-- SKILL.md                # Trigger, constraints, workflow, checks
+|   |-- references/             # Optional detail, loaded on demand
+|   `-- LICENSE                # Included where present; preserve notices
+|-- scripts/                   # Dependency-free validator and tests
+`-- .github/workflows/         # Validation on pushes and pull requests
+
+domains: architecture / engineering / design
 ```
 
----
+Domains organize the catalog. Install the complete `<slug>/` directory into your host's skill directory, preserving relative references.
 
-## Quick Start
+## Skill catalog
 
-### Option A: Import `.zip` Archives into Gemini
+| Domain | Skill | Use it to |
+|---|---|---|
+| **architecture** | [software-architecture-lead](skills/architecture/software-architecture-lead/SKILL.md) | Map dependencies, compare designs, and plan a staged migration with rollback criteria. |
+| **engineering** | [fullstack-web-playbook](skills/engineering/fullstack-web-playbook/SKILL.md) | Ship a tested vertical slice across UI, authorization, schemas, and database transactions. |
+| engineering | [fresh-context-recovery](skills/engineering/fresh-context-recovery/SKILL.md) | Rebuild task state from repository evidence after context loss. |
+| engineering | [delegation-scope-gate](skills/engineering/delegation-scope-gate/SKILL.md) | Assess whether a bounded task is suitable for delegation. |
+| **design** | [design-architect](skills/design/design-architect/SKILL.md) | Define complete UI states, semantic color tokens, and accessibility checks. |
+| design | [ui-motion-craft](skills/design/ui-motion-craft/SKILL.md) | Implement interruptible transitions with focus handling and reduced-motion fallbacks. |
 
-1. Clone this repository and run the cross-platform packaging script:
+## Install
 
-```bash
-git clone https://github.com/naufallariff/fyuraa-agent-skills.git
-cd fyuraa-agent-skills
-chmod +x scripts/package-skills.sh
-./scripts/package-skills.sh
+From your target project, use the third-party [Skills CLI](https://github.com/vercel-labs/skills) with Node.js 22.20+ to select a skill and host:
+
+```sh
+npx skills add naufallariff/runbook-skills --skill software-architecture-lead
 ```
 
-2. Upload the generated `.zip` files from `dist/` into **Gemini Skill Management Settings**.
+Replace the slug with any catalog entry. Review the selected workflow before allowing it to run tools. The installer downloads from GitHub; newly committed skills become available there after publication.
 
-### Option B: Symlink into Local IDE / CLI Projects
+For a local checkout, copy a complete skill directory. This PowerShell example installs into the target project's Codex directory; run it from that project and adjust the checkout path:
 
-Link individual skills directly into your project's `.agents/skills/` or `.github/skills/` folder so local coding agents pick them up automatically:
-
-```bash
-# Example: Link design-architect and software-architecture-lead into your app
-mkdir -p /path/to/your-project/.agents/skills
-ln -s "$(pwd)/skills/design-architect" /path/to/your-project/.agents/skills/design-architect
-ln -s "$(pwd)/skills/software-architecture-lead" /path/to/your-project/.agents/skills/software-architecture-lead
+```powershell
+New-Item -ItemType Directory -Force .agents/skills | Out-Null
+Copy-Item -Recurse ../runbook-skills/skills/architecture/software-architecture-lead .agents/skills/
 ```
 
----
+POSIX equivalent:
 
-## Credits & Attribution
+```sh
+mkdir -p .agents/skills
+cp -R ../runbook-skills/skills/architecture/software-architecture-lead .agents/skills/
+```
 
-The skills in this repository are independently curated, synthesized, and structured into progressive-disclosure agent modules by [Muhammad Naufal Arif](https://github.com/naufallariff). They distill established industry standards, open-source documentation, and community best practices across modern web platform engineering, TypeScript/Node.js architecture, perceptual color/design systems, and interaction physics.
+## Quick start
 
-## Contributing
+1. Choose one skill from the catalog and install its complete directory.
+2. Open the target project in your agent host. Use the host-specific destination below for manual installation.
+3. Ask for a bounded result, then inspect the proposed changes and verification evidence.
 
-Contributions, refinements, and new modular skills are welcome. Please review [CONTRIBUTING.md](CONTRIBUTING.md) and [AGENTS.md](AGENTS.md) before opening a pull request.
+| Host | Project destination | First task |
+|---|---|---|
+| [Claude Code](https://code.claude.com/docs/en/skills) | `.claude/skills/<slug>/` | `/software-architecture-lead Plan a staged refactor of this module.` |
+| [Codex CLI](https://developers.openai.com/codex/skills/) | `.agents/skills/<slug>/` | `$software-architecture-lead Map this module's dependencies and propose a migration.` |
+| [Cursor](https://cursor.com/docs/skills) | `.cursor/skills/<slug>/` | Ask Agent to use `software-architecture-lead` to review module boundaries. |
 
-## License
+Skill discovery and tool permissions depend on the installed host version and local policy. These are portable instructions; verify the result in your project.
 
-Released under the [MIT License](LICENSE) © 2026 [Muhammad Naufal Arif](https://github.com/naufallariff).
+## Contribute a workflow
+
+Have a recurring engineering task with a clear trigger and a checkable result? [Open an issue](https://github.com/naufallariff/runbook-skills/issues) or submit a focused pull request. Follow [CONTRIBUTING.md](CONTRIBUTING.md), [AGENTS.md](AGENTS.md), and the [PR template](.github/PULL_REQUEST_TEMPLATE.md).
+
+Run the same checks as CI with Node.js 22 or newer; no dependency installation is needed:
+
+```sh
+node --test scripts/validate-skills.test.mjs
+node scripts/validate-skills.mjs
+```
+
+CI reports **passing** only when both commands succeed. The live badge reflects GitHub's latest workflow state, which may be unavailable before the first push. Reviewers also check scope, source rights, and the full diff for private data. ZIP packaging and commercial release operations belong in a separate private factory.
+
+## License and sources
+
+See [LICENSE](LICENSE) for MIT terms and [ATTRIBUTION.md](ATTRIBUTION.md) for primary references and source-use rules. Retain copyright notices when redistributing. Linked standards keep their own terms; no affiliation, certification, or endorsement is claimed.
